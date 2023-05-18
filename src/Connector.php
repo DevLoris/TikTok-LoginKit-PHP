@@ -16,8 +16,8 @@ use Exception;
 class Connector {
 	// Base URLs used for the API calls
 	public const BASE_REDIRECT_URL = 'https://open-api.tiktok.com/platform/oauth/connect/?client_key=%s&scope=%s&response_type=code&redirect_uri=%s&state=%s';
-	public const BASE_AUTH_URL = 'https://open-api.tiktok.com/oauth/access_token/?client_key=%s&client_secret=%s&code=%s&grant_type=authorization_code';
-	public const BASE_REFRESH_URL = 'https://open-api.tiktok.com/oauth/refresh_token/?client_key=%s&grant_type=refresh_token&refresh_token=%s';
+	public const BASE_AUTH_URL = 'https://open.tiktokapis.com/v2/oauth/token/?client_key=%s&client_secret=%s&code=%s&grant_type=authorization_code';
+	public const BASE_REFRESH_URL = 'https://open.tiktokapis.com/v2/oauth/token/?client_key=%s&grant_type=refresh_token&refresh_token=%s';
 	public const BASE_USER_URL = 'https://open-api.tiktok.com/oauth/userinfo/?open_id=%s&access_token=%s';
 	public const BASE_VIDEOS_URL = 'https://open-api.tiktok.com/video/list/';
 
